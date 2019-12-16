@@ -7,5 +7,6 @@ using namespace std;
 // Main Function
 int main()
 {
+  FactorMod3();
   return 0;
 }

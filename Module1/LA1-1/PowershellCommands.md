@@ -24,6 +24,18 @@ $ g++ main.cpp -o main
 $ ./main.exe
 ```
 
+## g++ Compiler for 2 files
+For example, if you have a library 
+under the `functions.cpp` and `functions.h` files,
+and you have driver under `run_functions.cpp` you need to compile as follows
+```bash
+# To compile, list ALL source (cpp) files
+# -o for output file name'
+$ g++ funcctions.cpp run_functions.cpp -o run_funcctions
+# To run
+$./run_functions.exe
+```
+
 ### C++ Template
 ```cpp
 #include <iostream>

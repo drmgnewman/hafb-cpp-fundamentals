@@ -1,6 +1,6 @@
 /**
  * @file my_array.cpp
- * @author Michael Newman (you@domain.com)
+ * @author Michael Newman (michaelnewman1@weber.edu)
  * @brief Learn about C-Style arrays
  * @version 0.1
  * @date 2019-12-16
