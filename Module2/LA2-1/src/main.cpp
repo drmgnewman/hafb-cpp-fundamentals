@@ -58,7 +58,7 @@ int main() {
   std::cout << story << std::endl;
   std::string nick = "waldo";
   std::string new_nick = "jarold";
-  // Inserts a block of characters by replacing
+  // Inserts a block of characters by replacing one string.
   story.replace(story.find(nick), nick.size(), new_nick); // replace waldo with xxxxx
   std::cout << story << std::endl;
 
