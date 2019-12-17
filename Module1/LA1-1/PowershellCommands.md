@@ -10,12 +10,14 @@ Note: ($ )
 
 ## File System
 ``` bash
-.    # (one dot) present working
+.    # (one dot) present working directory
+..   # (two dots)
 ```
 ## C++ Basics
 - File extension: `.cpp`
+- Header files: `.h`
 
-## g++ Compiler
+## g++ Compiler for 1 file
 ```bash
 # To compile
 # -o for output file name
@@ -26,8 +28,7 @@ $ ./main.exe
 
 ## g++ Compiler for 2 files
 For example, if you have a library 
-under the `functions.cpp` and `functions.h` files,
-and you have driver under `run_functions.cpp` you need to compile as follows
+under the `functions.cpp` and `functions.h` files, and you have driver under `run_functions.cpp` you need to compile as follows
 ```bash
 # To compile, list ALL source (cpp) files
 # -o for output file name'
@@ -55,3 +56,10 @@ int main()
 
 // Run /** and <Enter>
 ```
+
+### CMake
+To build a project we need all the rules to be set under `CMakeLists.txt` file.
+- Create a build folder: `$ mkdir build`
+- Go to the build dir: `$ cd build`
+- Run cmake: `$ cmake .. -G "MinGW Makefiles"` The `..` is because your CMakeLists.txt is one folder up.
+-Build or compile your code: `$ cmake --build .` The `.` means to build it in pwd.
