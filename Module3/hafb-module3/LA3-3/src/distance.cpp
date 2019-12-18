@@ -2,5 +2,10 @@
 // increment counter variable with ++ operator
 // uses unnamed temporary object
 #include <iostream>
-using namespace std;
 #include "distance.h"
+using namespace std;
+
+void Distance::ShowDist() const
+{
+    std::cout << feet() << "\'-" << inches() << "\"" << std::endl;
+}
