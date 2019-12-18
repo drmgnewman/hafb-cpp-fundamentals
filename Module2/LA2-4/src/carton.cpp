@@ -98,3 +98,9 @@ double Carton::Volume() const
 {
     return length_ * width_ * height_;
 }
+// Capture output in a outStream
+void Carton::WriteData(std::ostream &out) const
+{
+    out << length_ << "," << width_ << "," << height_ << "," << Volume() << std::endl;
+}
+
