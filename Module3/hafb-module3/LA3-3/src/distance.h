@@ -19,5 +19,6 @@ public:
     void ShowDist() const;
 
     Distance operator +(Distance d2) const;
+    friend std::ostream& operator <<(std::ostream& os, const Distance& distance);
 };
 
